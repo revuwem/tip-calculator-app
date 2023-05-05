@@ -14,7 +14,7 @@ const RadioInput: React.FC<RadioInputProps> = ({
       <span
         role="presentation"
         className={clsx(
-          "block p-3 text-2xl text-white text-center bg-cyan-dark rounded transition",
+          "block p-2 text-2xl text-white text-center bg-cyan-dark rounded transition",
           "hover:text-cyan-dark hover:bg-cyan-light hover:cursor-pointer",
           "peer-focus:ring peer-focus:ring-2 peer-focus:ring-cyan-strong",
           "peer-checked:text-cyan-dark peer-checked:bg-cyan-strong"

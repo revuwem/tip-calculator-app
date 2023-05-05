@@ -10,7 +10,7 @@ const Input: React.FC<InputProps> = ({ className = "", icon, ...props }) => {
     <div className="relative">
       <input
         className={clsx(
-          "py-1 px-3 pl-8 text-2xl text-right text-cyan-dark bg-cyan-very-light-grayish rounded transition",
+          "w-full p-2 pl-8 text-2xl text-right text-cyan-dark bg-cyan-very-light-grayish rounded transition",
           "hover:outline hover:outline-2 hover:outline-cyan-strong hover:cursor-pointer",
           "focus:outline focus:outline-2 focus:outline-cyan-strong",
           className
