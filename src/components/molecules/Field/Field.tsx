@@ -3,7 +3,7 @@ import Label from "../../atoms/Label";
 
 type FieldProps = InputProps & {
   displayedLabel: string;
-  error?: boolean;
+  error?: string;
 };
 
 const Field: React.FC<FieldProps> = ({
@@ -13,8 +13,10 @@ const Field: React.FC<FieldProps> = ({
 }) => {
   return (
     <div>
-      <Label htmlFor={props.id}>{displayedLabel}</Label>
-      {error && <Label error>{error}</Label>}
+      <div className="flex justify-between">
+        <Label htmlFor={props.id}>{displayedLabel}</Label>
+        {error && <Label error>{error}</Label>}
+      </div>
       <Input {...props} />
     </div>
   );
