@@ -15,7 +15,7 @@ const Label: React.FC<LabelProps> = ({
   return (
     <label
       className={clsx(
-        "text-sm",
+        "text-sm inline-block mb-2",
         {
           "text-cyan-grayish": !error,
           "text-orange": error,
