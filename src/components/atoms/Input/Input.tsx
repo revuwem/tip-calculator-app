@@ -10,7 +10,7 @@ const Input: React.FC<InputProps> = ({ className = "", icon, ...props }) => {
     <div className="relative">
       <input
         className={clsx(
-          "w-full p-2 pl-8 text-2xl text-right text-cyan-dark bg-cyan-very-light-grayish rounded transition",
+          "w-full p-2 pr-4 pl-8 text-2xl text-right text-cyan-dark bg-cyan-very-light-grayish rounded transition",
           "hover:outline hover:outline-2 hover:outline-cyan-strong hover:cursor-pointer",
           "focus:outline focus:outline-2 focus:outline-cyan-strong",
           className
@@ -18,7 +18,7 @@ const Input: React.FC<InputProps> = ({ className = "", icon, ...props }) => {
         {...props}
       />
       {icon && (
-        <div className="absolute inset-0 w-3 aspect-square p-3">{icon}</div>
+        <div className="absolute inset-0 w-3 aspect-square p-4">{icon}</div>
       )}
     </div>
   );
