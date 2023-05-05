@@ -13,6 +13,7 @@ export default {
           "light-grayish": "hsl(185, 41%, 84%)",
           "very-light-grayish": "hsl(189, 41%, 97%)",
         },
+        orange: "hsl(9, 47%, 60%)",
       },
       screens: {
         xl: "1440px",
