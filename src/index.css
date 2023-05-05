@@ -17,6 +17,12 @@
 }
 
 @layer base {
+  body {
+    --body-bg-color: hsl(185, 41%, 84%);
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+  }
+
   /* Chrome, Safari, Edge, Opera */
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
