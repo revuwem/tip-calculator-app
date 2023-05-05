@@ -14,6 +14,9 @@ export default {
           "very-light-grayish": "hsl(189, 41%, 97%)",
         },
       },
+      screens: {
+        xl: "1440px",
+      },
     },
   },
   plugins: [],
