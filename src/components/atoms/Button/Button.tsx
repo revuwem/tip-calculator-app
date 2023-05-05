@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       className={clsx(
-        "block pt-4 pb-3 px-6 text-base uppercase bg-cyan-strong text-cyan-dark rounded transition",
+        "block w-full pt-4 pb-3 px-6 text-base uppercase bg-cyan-strong text-cyan-dark rounded transition",
         "hover:bg-cyan-light",
         "focus:bg-cyan-light",
         "disabled:opacity-30",
