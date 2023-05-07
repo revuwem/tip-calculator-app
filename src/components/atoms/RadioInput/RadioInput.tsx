@@ -10,7 +10,7 @@ const RadioInput: React.FC<RadioInputProps> = ({
 }) => {
   return (
     <label htmlFor={props.id}>
-      <input type="radio" className="sr-only peer " {...props} />
+      <input type="radio" className="sr-only peer" {...props} />
       <span
         role="presentation"
         className={clsx(
