@@ -105,8 +105,10 @@ const TipsForm: React.FC<TipsForm> = () => {
           displayedLabel="Bill"
           id="bill"
           name="bill"
+          type="number"
           icon={<DollarIcon />}
           placeholder="0"
+          autoComplete="off"
           onChange={form.handleChange}
           value={form.values.bill}
           onBlur={form.handleBlur}
@@ -136,9 +138,11 @@ const TipsForm: React.FC<TipsForm> = () => {
           ))}
           <Input
             aria-label="Custom"
-            placeholder="Custom"
             id="tip-custom"
             name="customTips"
+            type="number"
+            placeholder="Custom"
+            autoComplete="off"
             value={form.values.customTips}
             onFocus={() => form.setFieldValue("tips", "")}
             onBlur={form.handleBlur}
@@ -150,8 +154,10 @@ const TipsForm: React.FC<TipsForm> = () => {
           displayedLabel="Number of People"
           id="people"
           name="people"
+          type="number"
           icon={<PersonIcon />}
           placeholder="0"
+          autoComplete="off"
           onBlur={form.handleBlur}
           onChange={form.handleChange}
           value={form.values.people}
