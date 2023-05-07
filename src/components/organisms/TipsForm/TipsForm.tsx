@@ -1,3 +1,7 @@
+import { useEffect, useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { getTipsTotal } from "../../../lib/getTipsTotal";
 import Button from "../../atoms/Button";
 import Input from "../../atoms/Input";
 import RadioInput from "../../atoms/RadioInput";
@@ -6,10 +10,6 @@ import FieldSet from "../../molecules/FieldSet";
 import Total from "../../molecules/Total";
 import DollarIcon from "../../../assets/icon-dollar.svg";
 import PersonIcon from "../../../assets/icon-person.svg";
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { useEffect, useMemo, useState } from "react";
-import { getTipsTotal } from "../../../lib/getTipsTotal";
 
 type TipsForm = {};
 
