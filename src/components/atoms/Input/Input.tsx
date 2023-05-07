@@ -3,9 +3,15 @@ import clsx from "clsx";
 export type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
   className?: string;
   icon?: React.ReactNode;
+  error?: boolean;
 };
 
-const Input: React.FC<InputProps> = ({ className = "", icon, ...props }) => {
+const Input: React.FC<InputProps> = ({
+  className = "",
+  icon = null,
+  error = false,
+  ...props
+}) => {
   return (
     <div className="relative">
       <input
@@ -14,6 +20,7 @@ const Input: React.FC<InputProps> = ({ className = "", icon, ...props }) => {
           "hover:outline hover:outline-2 hover:outline-cyan-strong hover:cursor-pointer",
           "focus:outline focus:outline-2 focus:outline-cyan-strong",
           { icon: "pl-8" },
+          { "outline outline-2 outline-orange": error },
           className
         )}
         {...props}
