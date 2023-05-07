@@ -17,8 +17,8 @@ const Button: React.FC<ButtonProps> = ({
       className={clsx(
         "block w-full pt-4 pb-3 px-6 text-base uppercase bg-cyan-strong text-cyan-dark rounded transition",
         "hover:bg-cyan-light",
-        "focus:bg-cyan-light",
-        "disabled:opacity-30",
+        "focus:bg-cyan-light focus:outline-cyan-strong focus:outline-offset-2",
+        "disabled:opacity-30 disabled:hover:bg-cyan-strong",
         className
       )}
       {...props}
