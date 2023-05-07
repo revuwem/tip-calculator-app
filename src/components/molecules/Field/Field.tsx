@@ -1,14 +1,14 @@
 import Input, { InputProps } from "../../atoms/Input";
 import Label from "../../atoms/Label";
 
-type FieldProps = InputProps & {
+type FieldProps = Omit<InputProps, "error"> & {
   displayedLabel: string;
   error?: string;
 };
 
 const Field: React.FC<FieldProps> = ({
   displayedLabel,
-  error = false,
+  error = "",
   ...props
 }) => {
   return (
