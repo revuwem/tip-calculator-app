@@ -19,7 +19,7 @@ const Input: React.FC<InputProps> = ({
           "w-full py-2 px-4 text-2xl text-right text-cyan-dark bg-cyan-very-light-grayish rounded transition",
           "hover:outline hover:outline-2 hover:outline-cyan-strong hover:cursor-pointer",
           "focus:outline focus:outline-2 focus:outline-cyan-strong",
-          { icon: "pl-8" },
+          { "pl-10": icon },
           { "outline outline-2 outline-orange": error },
           className
         )}
