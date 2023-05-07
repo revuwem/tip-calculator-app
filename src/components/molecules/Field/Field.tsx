@@ -17,7 +17,7 @@ const Field: React.FC<FieldProps> = ({
         <Label htmlFor={props.id}>{displayedLabel}</Label>
         {error && <Label error>{error}</Label>}
       </div>
-      <Input {...props} />
+      <Input {...props} error={!!error} />
     </div>
   );
 };
